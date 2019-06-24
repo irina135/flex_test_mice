@@ -11,6 +11,18 @@ a {
 * {
   cursor: default;
 }
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/Roboto.ttf");
+}
+@font-face {
+  font-family: Roboto-bold;
+  src: url("../fonts/Roboto-bold.ttf");
+}
+@font-face {
+  font-family: OpenSans;
+  src: url("../fonts/OpenSans.ttf");
+}
 .page__header,
 .banner__wrapper,
 .page__about-us,
@@ -37,11 +49,115 @@ a {
 .header {
   height: 86px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 @media (max-width: 576px) {
   .header {
     height: 56px;
   }
+}
+.header__logo {
+  width: 200px;
+  margin-top: 3px;
+  margin-right: 45px;
+}
+@media (max-width: 1500px) {
+  .header__logo {
+    margin-right: 35px;
+    width: 200px;
+  }
+}
+@media (max-width: 1300px) {
+  .header__logo {
+    margin-right: 45px;
+    width: 190px;
+  }
+}
+@media (max-width: 1200px) {
+  .header__logo {
+    margin-right: 0;
+    width: 130px;
+  }
+}
+@media (max-width: 992px) {
+  .header__logo {
+    width: 80px;
+    margin-right: 0;
+  }
+}
+@media (max-width: 1200px) {
+  .header__logo img {
+    width: 130px;
+  }
+}
+@media (max-width: 992px) {
+  .header__logo img {
+    width: 80px;
+  }
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  width: 670px;
+}
+@media (max-width: 1300px) {
+  .header__nav {
+    width: 670px;
+  }
+}
+@media (max-width: 1200px) {
+  .header__nav {
+    width: 600px;
+  }
+}
+@media (max-width: 992px) {
+  .header__nav {
+    width: 510px;
+  }
+}
+.header__nav a {
+  font-family: Roboto;
+  color: #5b5b5b;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0;
+}
+@media (max-width: 1200px) {
+  .header__nav a {
+    font-size: 14px;
+  }
+}
+@media (max-width: 992px) {
+  .header__nav a {
+    font-size: 12px;
+  }
+}
+.header__contacts-phone a,
+.header__contacts-link a {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #000000;
+  text-decoration: none;
+}
+@media (max-width: 1200px) {
+  .header__contacts-phone a,
+  .header__contacts-link a {
+    font-size: 14px;
+  }
+}
+@media (max-width: 992px) {
+  .header__contacts-phone a,
+  .header__contacts-link a {
+    font-size: 12px;
+    margin-left: 20px;
+  }
+}
+.header__contacts-link a {
+  color: #c6a16e;
 }
 .header__line {
   position: absolute;
