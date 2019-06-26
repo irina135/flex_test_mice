@@ -61,46 +61,56 @@
     </div>
 </section>
 <section class="page__forms">
-    <h2></h2>
-    <svg></svg>
+    <p>
+            Получите лучшую идею<br>
+
+            проведения вашего мероприятия<br>
+
+            и прогноз стоимости уже через 30 минут!
+        </p>
+           <!-- <svg>
+  <line x1="10" y1="10" x2="90" y2="90" stroke="white" />
+</svg>-->
+    <div class="forms__line">
+    </div>
     <form>
         <div class="forms__wrapper">
             <div class="forms__control-big">
-                <input type="text">
+                <input type="text" placeholder="Имя" id="forms__name">
             </div>
             <div class="forms__control-big">
-                <input type="text">
+                <input type="text" placeholder="Телефон" id="forms__phone">
             </div>
         </div>
         <div class="forms__wrapper">
             <div class="forms__control-big">
                 <select>
-                    <option value="1"></option>
-                    <option value="1"></option>
-                    <option value="1"></option>
+                    <option selected value="1">Экскурсия</option>
+                    <option value="1">Корпоратив</option>
+                    <option value="1">Отдых</option>
                 </select>
             </div>
             <div class="forms__control-small">
-                <input type="text">
+                <input type="number" min="0" step="1" placeholder="Кол-во человек" id="forms__number-of-persons">
             </div>
             <div class="forms__control-small">
-                <input type="text">
+                <input type="number" min="0" step="1" placeholder="Кол-во дней" id="forms__number-of-days">
             </div>
         </div>
         <div class="forms__wrapper">
             <div class="forms__control-big">
-                <input type="text">
+                <input type="date" placeholder="Ориентировочная дата" id="forms__date">
             </div>
             <div class="forms__control-big">
                 <select>
-                    <option value="1"></option>
-                    <option value="1"></option>
-                    <option value="1"></option>
+                    <option selected value="1">Швеция</option>
+                    <option value="1">Франция</option>
+                    <option value="1">Россия</option>
                 </select>
             </div>
         </div>
         <div class="forms__btn">
-            <input type="submit">
+            <input name="button" type="submit" class="form-btn" value="Получить">
         </div>
     </form>
 </section>
